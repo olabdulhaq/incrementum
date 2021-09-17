@@ -1,0 +1,348 @@
+.navbar {
+  background: #000;
+
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  //   &__item--logo {
+  //     margin-right: auto;
+  //   }
+
+  &__item {
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo {
+    border-radius: 15px;
+  }
+
+  &__giveaway {
+    font-size: 2rem;
+
+    & a {
+      color: #fff;
+    }
+  }
+
+  &__list {
+    padding: 2rem;
+
+    @include respond(phone) {
+      padding: 1rem;
+    }
+  }
+
+  &__logo {
+    width: 7rem;
+    height: 7rem;
+  }
+
+  &__img {
+    width: 4rem;
+    height: 4rem;
+  }
+}
+
+///Hero Section
+.hero {
+  margin-bottom: 0;
+  &__text-box {
+    height: 17rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #cdecff;
+  }
+
+  &__text {
+    text-align: center;
+    color: #fff;
+    font-size: 4rem;
+    font-family: "CoventryGarden";
+    letter-spacing: 0.6rem;
+    text-shadow: 3px 3px 5px #333;
+    // text-transform: uppercase;
+  }
+
+  &__photo {
+    // height: 100vh;
+    // background-image: url(../image/tree.png);
+    // background-size: 100%;
+    // background-position: center;
+    // background-repeat: no-repeat;
+
+    max-height: 100vh;
+    max-width: 100vw;
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+///GOALS
+.goals {
+  padding: 3rem;
+  //   margin-top: 0;
+  background-color: #000;
+
+  &__header {
+    margin-top: 2rem;
+  }
+
+  &__header-text {
+    font-size: 3.5rem;
+    font-weight: 300;
+    text-transform: capitalize;
+    color: #fff;
+  }
+
+  &__text-box {
+    display: flex;
+    margin-top: 5rem;
+
+    @include respond(tab-port) {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__para-box {
+    flex: 50%;
+
+    @include respond(tab-port) {
+      flex: 95%;
+    }
+  }
+
+  &__para {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 300;
+  }
+
+  &__list {
+    color: #fff;
+    font-size: 1.5rem;
+    line-height: 3;
+  }
+
+  &__para-box--img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__para-img {
+    height: 15rem;
+    width: 15rem;
+  }
+
+  &__mint-con {
+    margin-top: 3rem;
+  }
+
+  &__mint {
+    font-size: 4rem;
+    font-weight: 300;
+    color: #fff;
+  }
+
+  &__mint-item {
+    margin-top: 3rem;
+  }
+}
+
+///ROADMAP
+.roadmap {
+  background-color: #f3efdc;
+  &__list {
+    display: flex;
+    flex-direction: row;
+    max-width: 50vw;
+    max-height: 140vh;
+  }
+
+  &__left,
+  &__right {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__left {
+    max-width: 28vw;
+    flex-wrap: inherit;
+    justify-content: stretch;
+    z-index: 1;
+
+    @include respond(tab-port) {
+      display: none;
+    }
+  }
+
+  &__img {
+    min-height: 80vh;
+    min-width: 75vw;
+    z-index: 2;
+  }
+
+  &__right {
+    min-width: 68vw;
+    max-height: 100%;
+    z-index: 2;
+    justify-content: flex-end;
+
+    @include respond(tab-port) {
+      min-width: 95vw;
+      justify-content: center;
+      // flex-wrap: wrap;
+    }
+  }
+
+  &__title-box {
+    display: flex;
+    justify-content: center;
+    max-width: 70vw;
+
+    @include respond(tab-port) {
+      max-width: 100vw;
+    }
+  }
+
+  &__title {
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    line-height: 2;
+
+    @include respond(tab-port) {
+      margin-top: 5rem;
+    }
+  }
+
+  &__right-col {
+    flex-direction: column;
+    padding-bottom: 1vh;
+  }
+
+  &__right-col,
+  &__right-col-2 {
+    display: flex;
+    align-items: flex-start;
+
+    @include respond(tab-port) {
+      // min-width: 100vw;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+  }
+
+  &__right-col-2 {
+    flex-direction: row;
+  }
+
+  &__right-col-item {
+    min-width: 35vw;
+  }
+
+  &__right-header {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    line-height: 2;
+  }
+
+  &__right-text {
+    line-height: 1.5;
+    font-size: 1.4rem;
+    max-width: 30vw;
+    text-align: justify;
+
+    @include respond(tab-port) {
+      max-width: 80vw;
+    }
+  }
+}
+
+///ABOUT
+.about {
+  background-color: #000;
+  padding: 5rem;
+
+  &__heading {
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 300;
+    color: #fff;
+  }
+
+  &__item {
+    max-width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+
+    @include respond(tab-port) {
+      display: block;
+      max-width: 100%;
+    }
+  }
+
+  &__list {
+    // padding: 5rem 8rem;
+    margin: 3rem;
+    // border: 1px solid red;
+  }
+
+  &__img-box {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__img {
+    width: 12rem;
+    height: 12rem;
+    border-radius: 100px;
+  }
+
+  &__person {
+    text-align: center;
+    margin-top: 3rem;
+    font-size: 5rem;
+    font-weight: bold;
+    color: #fff;
+  }
+
+  &__para {
+    margin-top: 3rem;
+    font-size: 2rem;
+    color: #fff;
+
+    @include respond(tab-port) {
+      text-align: center;
+    }
+  }
+
+  &__footer-item {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__footer-copy {
+    margin-top: 1rem;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+  }
+}
